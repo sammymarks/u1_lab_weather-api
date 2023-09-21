@@ -9,7 +9,7 @@ button.addEventListener('click', async ()=> {
     let search = input.value
     console.log(search)
 
-    let forecastURL = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${search}&aqi=no`
+    let forecastURL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${search}&aqi=no`
     let forecastData = await axios.get(forecastURL)
    
 

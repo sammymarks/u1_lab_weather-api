@@ -1,0 +1,120 @@
+@media screen and (max-width: 400px) {
+
+
+
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        font-size: 30px;
+        background-color: darkgoldenrod;
+        width: 100%;
+        padding:5px 0 1px 0;
+        margin: 0px;
+    }
+
+    body {
+        height: 90%;
+    }
+
+    #cityName {
+        font-size: 20px;
+        padding: 5px 0 2px 0;
+        margin:0%;
+    }
+
+    #last-updated {
+        font-size: 15px;
+        padding-bottom:5px;
+        margin: 0%;
+    }
+
+    .weather-block {
+        background-color: burlywood;
+        padding: 10px;
+        margin: 5px 0
+    }
+
+
+
+    .weather-block-title {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title pic"
+        "condition pic"
+        ;
+    }
+
+    #weather-block-name {
+        align-items: center;
+        grid-area: title;
+        font-size: 20px;
+        font-weight: bold ;
+        padding: auto 0px;
+    }
+
+    #current-condition {
+        grid-area: condition;
+    }
+
+    #forecast-condition {
+        grid-area: condition;
+    }
+
+    #current-condition-icon {
+        grid-area: pic;
+    }
+
+    #forecast-icon {
+        grid-area: pic;
+    }
+
+    .num-box-holder {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 5px;
+    }
+
+    .num-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: 10px;
+        border: 5px;
+    }
+
+    .num-box-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .data {
+        font-size: 30px;
+    }
+
+    .hourly-forecast-table {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap
+    }
+
+    .forecast-table-item {
+        width: 50%;
+        align-items: center;
+        background-color: azure;
+        border: 10px;
+        border-color: black;
+    }
+
+}

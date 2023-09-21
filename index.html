@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>What's the Weather?</title>
+</head>
+
+
+
+<body>
+    <header>
+        What's the Weather? <br>
+        <input id="textInput" type="text" placeholder="enter city here" />
+        <button id="submitButton"> Search </button>
+        <h1 class="title" id="cityName"> </h1>
+        <h3 class="title" id="last-updated">Last Updated: </h3>
+    
+    </header>
+
+
+    <div class="weather-block" id="current-weather">
+        <div class="weather-block-title" id="current">
+            <div class="block-title-item" id="weather-block-name">Current Weather</div>
+            <div class="weather-block-sub-head block-title-item" id="current-condition"></div>
+            <div class="weather-block-condition-logo block-title-item" id="current-condition-icon"></div>
+        </div>
+        
+        <div class="icon" id="current-icon"></div>
+
+        <div class="num-box-holder" id="current">
+            <div class="num-box" id="actual-temp">
+                <div class="num-box-title">Actual Temp</div>
+                <div class="data"></div>
+            </div>
+            <div class="num-box" id="feels-like">
+                <div class="num-box-title">Feels Like</div>
+                <div class="data"></div>
+            </div>
+            <div class="num-box" id="humidity">
+                <div class="num-box-title">Humidity</div>
+                <div class="data"></div>
+            </div>
+            <div class="num-box" id="precipitation">
+                <div class="num-box-title">Precipitation</div>
+                <div class="data"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-block" id="forecast-weather">
+        <div class="weather-block-title" id="forecast">
+            <div class="block-title-item" id="weather-block-name">Today's Forecast</div>
+            <div class="weather-block-sub-head block-title-item" id="forecast-condition"></div>
+            <div class="weather-block-condition-logo block-title-item" id="forecast-icon"></div>
+        </div>
+        
+        <div class="num-box-holder" id="forecast">
+            <div class="num-box" id="high-of">
+                <h4 class="num-box-title">High of</h4>
+                <div class="data"></div>
+            </div>
+            <div class="num-box" id="low-of">
+                <h4 class="num-box-title">Low of</h4>
+                <div class="data"></div>
+            </div>
+            <div class="num-box" id="chance-of-rain">
+                <h4 class="num-box-title">Rain %</h4>
+                <div class="data"></div>
+            </div>
+            <div class="num-box" id="chance-of-snow">
+                <h4 class="num-box-title">Snow %</h4>
+                <div class="data"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-block" id="hourly-forecast">
+        <h2>Hourly Forecast</h2>
+        <div class="hourly-forecast-table">
+            <div class="forecast-table-item">Time</div>
+            <div class="forecast-table-item">Temp</div>
+
+        </div>
+    </div>
+
+</body>
+</html>
